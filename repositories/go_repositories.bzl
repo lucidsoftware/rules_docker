@@ -37,9 +37,9 @@ def go_deps():
     if "com_github_google_go_containerregistry" not in excludes:
         go_repository(
             name = "com_github_google_go_containerregistry",
-            urls = ["https://api.github.com/repos/google/go-containerregistry/tarball/8a2841911ffee4f6892ca0083e89752fb46c48dd"],  # v0.1.4
-            strip_prefix = "google-go-containerregistry-8a28419",
-            sha256 = "60b9a600affa5667bd444019a4e218b7752d8500cfa923c1ac54ce2f88f773e2",
+            urls = ["https://github.com/google/go-containerregistry/archive/v0.1.4.tar.gz"],  # v0.1.4
+            strip_prefix = "go-containerregistry-0.1.4",
+            sha256 = "06aaf109787b9c6de1aea4af547fc47c7a4522929ab30b966ac5f2bec598c6ab",
             importpath = "github.com/google/go-containerregistry",
             type = "tar.gz",
         )
