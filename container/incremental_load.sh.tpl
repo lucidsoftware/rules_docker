@@ -29,7 +29,7 @@ function guess_runfiles() {
     fi
 }
 
-RUNFILES="${PYTHON_RUNFILES:-${RUNFILES_DIR}}"
+RUNFILES="${PYTHON_RUNFILES:-${RUNFILES_DIR:-$(guess_runfiles)}}"
 
 DOCKER="%{docker_tool_path}"
 DOCKER_FLAGS="%{docker_flags}"

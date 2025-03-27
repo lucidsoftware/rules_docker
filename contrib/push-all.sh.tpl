@@ -25,7 +25,7 @@ function guess_runfiles() {
     fi
 }
 
-RUNFILES="${PYTHON_RUNFILES:-${RUNFILES_DIR}}"
+RUNFILES="${PYTHON_RUNFILES:-${RUNFILES_DIR:-$(guess_runfiles)}}"
 
 PIDS=()
 function async() {
